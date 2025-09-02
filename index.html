@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagens, Vídeo, Áudio, Formulário, Links e Listas</title>
+</head>
+<body>
+
+  <!-- 1. Inserindo Imagens -->
+  <h2>1. Inserindo Imagens</h2>
+
+  <img src="bolo.png" alt="Descrição da imagem 1" width="200" height="150">
+  <br><br>
+
+  <img src="strogonoff.jpg" alt="Descrição da imagem 2" width="300" height="200">
+  <br><br>
+
+  <img src="saladinha.jpg" alt="Descrição da imagem 3">
+  <br><br>
+
+  <!-- 2. Adicionando Vídeo -->
+  <h2>2. Adicionando Vídeo</h2>
+
+  <video src="video.mp4" width="640" poster="capa.jpg" controls>
+    Seu navegador não suporta o elemento <code>video</code>.
+  </video>
+  <br><br>
+
+  <!-- 3. Inserindo Áudio -->
+  <h2>3. Inserindo Áudio</h2>
+
+  <audio controls>
+    <source src="musica.mp3" type="audio/mpeg">
+    <source src="musica.ogg" type="audio/ogg">
+    Seu navegador não suporta áudio.
+  </audio>
+  <br><br>
+
+  <!-- 4. Criando Formulário -->
+  <h2>4. Criando Formulário</h2>
+
+  <form action="#" method="post">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+  <br><br>
+
+  <!-- 5. Criando Links -->
+  <h2>5. Criando Links</h2>
+
+  <!-- Link de texto simples para o Google -->
+  <p><a href="https://www.google.com">Acesse o Google</a></p>
+
+  <!-- Link com imagem clicável -->
+  <p>
+    <a href="https://www.exemplo.com">
+      <img src="bolo.png" alt="Imagem Clicável" width="100">
+    </a>
+  </p>
+
+  <!-- Link que abre em nova aba -->
+  <p><a href="https://www.openai.com" target="_blank">Visite a OpenAI em nova aba</a></p>
+  <br><br>
+
+  <!-- 6. Listas -->
+  <h2>6. Listas</h2>
+
+  <!-- Lista ordenada -->
+  <h3>Lista Ordenada</h3>
+  <ol>
+    <li>Passo 1</li>
+    <li>Passo 2</li>
+    <li>Passo 3</li>
+  </ol>
+
+  <!-- Lista não ordenada -->
+  <h3>Lista Não Ordenada</h3>
+  <ul>
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+  </ul>
+
+</body>
+</html>
