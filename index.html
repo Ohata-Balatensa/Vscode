@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Imagens, Vídeo, Áudio, Formulário, Links, Listas e Tabela</title>
+
+  <!-- Estilos CSS adicionados para elementos com classe -->
   <style>
-    /* Estilo para parágrafos com classe destaque */
+    /* Classe que aplica fundo amarelo claro aos parágrafos */
     .destaque {
-      background-color: #ffffcc; /* Fundo amarelo claro */
+      background-color: #ffffcc;
       padding: 10px;
     }
 
-    /* Estilo para a div com explicações */
+    /* Classe usada para estilizar uma div explicativa */
     .explicacao {
       border: 2px solid #666;
       padding: 15px;
@@ -20,19 +22,22 @@
 </head>
 <body>
 
-  <!-- 1. Inserindo Imagens -->
+  <!-- Seção 1: Inserindo imagens com a tag <img> -->
   <h2>1. Inserindo Imagens</h2>
 
+  <!-- Imagem com tamanho definido -->
   <img src="bolo.png" alt="Descrição da imagem 1" width="200" height="150">
   <br><br>
 
+  <!-- Outra imagem com tamanho maior -->
   <img src="strogonoff.jpg" alt="Descrição da imagem 2" width="300" height="200">
   <br><br>
 
+  <!-- Imagem sem ajuste de tamanho -->
   <img src="saladinha.jpg" alt="Descrição da imagem 3">
   <br><br>
 
-  <!-- 2. Adicionando Vídeo -->
+  <!-- Seção 2: Inserindo vídeo com poster e controles -->
   <h2>2. Adicionando Vídeo</h2>
 
   <video src="video.mp4" width="640" poster="capa.jpg" controls>
@@ -40,37 +45,42 @@
   </video>
   <br><br>
 
-  <!-- 3. Inserindo Áudio -->
+  <!-- Seção 3: Inserindo áudio com controles -->
   <h2>3. Inserindo Áudio</h2>
 
   <audio controls>
+    <!-- Formatos diferentes para compatibilidade -->
     <source src="musica.mp3" type="audio/mpeg">
     <source src="musica.ogg" type="audio/ogg">
     Seu navegador não suporta áudio.
   </audio>
   <br><br>
 
-  <!-- 4. Criando Formulário -->
+  <!-- Seção 4: Criando formulário -->
   <h2>4. Criando Formulário</h2>
 
   <form action="#" method="post">
+    <!-- Campo de nome (obrigatório) -->
     <label for="nome">Nome:</label><br>
     <input type="text" id="nome" name="nome" required><br><br>
 
+    <!-- Campo de e-mail (obrigatório) -->
     <label for="email">E-mail:</label><br>
     <input type="email" id="email" name="email" required><br><br>
 
+    <!-- Campo de mensagem com área de texto -->
     <label for="mensagem">Mensagem:</label><br>
     <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea><br><br>
 
+    <!-- Botão de envio -->
     <button type="submit">Enviar</button>
   </form>
   <br><br>
 
-  <!-- 5. Criando Links -->
+  <!-- Seção 5: Criando links -->
   <h2>5. Criando Links</h2>
 
-  <!-- Link de texto simples para o Google -->
+  <!-- Link de texto simples -->
   <p><a href="https://www.google.com">Acesse o Google</a></p>
 
   <!-- Link com imagem clicável -->
@@ -84,10 +94,10 @@
   <p><a href="https://www.openai.com" target="_blank">Visite a OpenAI em nova aba</a></p>
   <br><br>
 
-  <!-- 6. Listas -->
+  <!-- Seção 6: Listas -->
   <h2>6. Listas</h2>
 
-  <!-- Lista ordenada -->
+  <!-- Lista ordenada: numerada -->
   <h3>Lista Ordenada</h3>
   <ol>
     <li>Passo 1</li>
@@ -95,7 +105,7 @@
     <li>Passo 3</li>
   </ol>
 
-  <!-- Lista não ordenada -->
+  <!-- Lista não ordenada: com marcadores -->
   <h3>Lista Não Ordenada</h3>
   <ul>
     <li>Item A</li>
@@ -104,12 +114,13 @@
   </ul>
   <br><br>
 
-  <!-- 7. Tabela -->
+  <!-- Seção 7: Tabela -->
   <h2>7. Tabela</h2>
 
   <table border="1" cellpadding="5" cellspacing="0">
     <thead>
       <tr>
+        <!-- Cabeçalhos da tabela -->
         <th>Cabeçalho 1</th>
         <th>Cabeçalho 2</th>
         <th>Cabeçalho 3</th>
@@ -117,11 +128,13 @@
     </thead>
     <tbody>
       <tr>
+        <!-- Primeira linha de dados -->
         <td>Dados 1-1</td>
         <td>Dados 1-2</td>
         <td>Dados 1-3</td>
       </tr>
       <tr>
+        <!-- Segunda linha de dados -->
         <td>Dados 2-1</td>
         <td>Dados 2-2</td>
         <td>Dados 2-3</td>
@@ -130,18 +143,21 @@
   </table>
   <br><br>
 
-  <!-- 9. IDs e Classes -->
+  <!-- Seção 9: IDs e Classes -->
   <h2>9. IDs e Classes</h2>
 
+  <!-- Parágrafo com ID exclusivo -->
   <p id="introducao">Este é um parágrafo introdutório com ID "introducao".</p>
 
+  <!-- Dois parágrafos com classe compartilhada "destaque" -->
   <p class="destaque">Este é o primeiro parágrafo com a classe "destaque".</p>
   <p class="destaque">Este é o segundo parágrafo com a classe "destaque".</p>
   <br><br>
 
-  <!-- 10. Div como contêiner -->
+  <!-- Seção 10: Div como contêiner -->
   <h2>10. Div como contêiner</h2>
 
+  <!-- Div com classe "explicacao" agrupando conteúdo -->
   <div class="explicacao">
     <h3>Subtítulo dentro da div</h3>
     <p>Este é o primeiro parágrafo explicativo dentro da div com classe "explicacao".</p>
